@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    roman_numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50,'C': 100,
-            'D': 500, 'M': 1000}
+    roman_numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50,'C': 100,'D': 500,
+            'M': 1000, 'IV': 4, 'IX': 9, 'XL': 40, 'XC': 90, 'CD': 400,
+            'CM': 900}
     if roman_string is None or not isinstance(roman_string, str):
         return 0
     total = 0
-    old_value = 0
-    for numeral in reversed(roman_string):
-        value = roman_numerals.get(numeral, 0)
-        if value < old_value:
-            total = total - value
+    idx = 0
+    while idx < len(roman_string):
+        if idx+1 < len(roman_string) and roman_string[idx:idx+2] in roman:
+            total += roman[roman_string[idx:idx+2]]
+            idx += 2
         else:
-            total = total + value
-        old_value = value
+            total += roman[roman_string[idx]]
+            idx += 1
+
     return total
