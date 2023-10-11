@@ -13,4 +13,4 @@ def roman_to_int(roman_string):
         else:
             total = total + value
         old_value = value
-    return total 
+    return total
