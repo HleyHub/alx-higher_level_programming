@@ -1,6 +1,6 @@
 # General Learning Objectives
 
-This project concerns explains the following:
+This project explains the following:
 
 * Why Python programming is awesome
 
