@@ -10,13 +10,18 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
-        """Private Attribute width and height"""
+        """Initialize variables"""
 
         self.width = width
         self.height = height
 
         @property
         def width(self):
+            """
+            Find Width
+            Return: With of the rectangle
+            """
+
             return self.__width
 
         @width.setter
@@ -31,6 +36,11 @@ class Rectangle:
 
         @property
         def height(self):
+            """
+            Find Height
+            Return: Height of the rectangle
+            """
+
             return self.__height
 
         @height.setter
