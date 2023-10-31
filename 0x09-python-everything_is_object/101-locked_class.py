@@ -5,7 +5,7 @@
 
 class LockedClass:
     """
-        This class has no class or object attribute. It 
+        This class has no class or object attribute. It
         prevents the user from dynamically creating new instance attributes
     """
 
