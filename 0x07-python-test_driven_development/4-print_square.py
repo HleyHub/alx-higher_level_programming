@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-A function that prints prints a square
+Module that prints prints a square
 """
 
 def print_square(size):
