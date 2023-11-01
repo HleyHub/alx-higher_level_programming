@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 """
-Module that prints prints a square
+Module that prints a square
 """
 
 def print_square(size):
     """
-        Return: A square with the character #
+        Return: Square with the character #
     """
 
     if not isinstance(size, int):
