@@ -3,9 +3,11 @@
 Define Class
 """
 
+
 class MyList(list):
     """
-    A class that inherits from a list
+    subclass:
+    class MyList
     """
 
     def print_sorted(self):
