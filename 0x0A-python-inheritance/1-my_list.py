@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-Define Class
+    class List module
 """
 
 
 class MyList(list):
     """
-    subclass:
-    class MyList
+        subclass:
+        class MyList
     """
 
     def print_sorted(self):
         """
-        Print a sorted list
+        Prints a sorted List
         """
 
         print(sorted(self))
