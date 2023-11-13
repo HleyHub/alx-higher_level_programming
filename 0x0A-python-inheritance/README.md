@@ -1,4 +1,6 @@
-# General Learning Objectives
+# 0x0A. Python - Inheritance
+
+## General Learning Objectives
 
 This project explains:
 
